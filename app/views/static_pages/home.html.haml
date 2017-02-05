@@ -2,7 +2,10 @@
   .row-fluid
     .centering.text-center
       #title
-        %h1 American Donor Syndicate
+        %h1 
+          %span American 
+          %span.lightblue Donor 
+          %span Syndicate
       %br
     .row#nav.centering.text-center
       .col-xs-12
@@ -13,7 +16,8 @@
             %ul
               %li 
                 %a Home
-              %li.lightblue /
+              %li.lightblue
+                %b /
               %li 
                 = link_to "Free Press Fund", syndicate_path(1)
               %li.lightblue /
@@ -21,7 +25,7 @@
                 %a Law Fund
               %li.lightblue /
               %li
-                %a FAQ
+                = link_to "FAQ", static_pages_faq_path
 
 = link_to "Sign out", destroy_user_session_path, :method => :delete 
 

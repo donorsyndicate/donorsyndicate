@@ -2896,6 +2896,7 @@ a.btn.btn-red:active {
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 	border-bottom: 1px solid gray;
+	letter-spacing: 1px;
 }
 .border {
 	border-top: 1px solid gray;
@@ -2904,15 +2905,39 @@ a.btn.btn-red:active {
 	color: #2bbeeb;
 }
 
+.qa {
+	margin-bottom: 20px;
+}
 
 #sub-nav li {
 	float: left;
 	padding-left: 3px;
 	padding-right: 6px;
+	letter-spacing: 1px;
 }
 
 .wrapper a {
 	color: inherit;
+}
+
+.question {
+	font-weight: bold;
+}
+.answer {
+	text-transform: lowercase;
+}
+
+#title {
+	color: #55595e;
+	letter-spacing: 2px;
+	word-spacing: 7px;
+}
+
+a {
+	&:hover {
+		color: #2bbeeb;
+		text-decoration: none;
+	}
 }
 
 .vertical-center {
