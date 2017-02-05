@@ -1,40 +1,246 @@
-.container
-  .row
-    %h2.col-xs-6
-      American Donor Syndicate
-    %h5.col-xs-8
-      A donor syndicate to protect the institutions of U.S. democracy against executive branch overreach.
-  %hr
-
-  #wrapper
-    .syndicates 
-      %h3 Funds
-      .row.syndicate
-        .col-xs-8
-          %h4 Free the press
-          Do this..
-          = link_to "fund", syndicate_path(1)
+.container-fluid
+  .row-fluid
+    .centering.text-center
+      #title
+        %h1 American Donor Syndicate
       %br
-      .row.syndicate
-        .col-xs-8
-          %h4 Protect the law
-          Do this..
+    .row#nav.centering.text-center
+      .col-xs-12
+        #subtitle
+          Protecting U.S. institutions against executive branch overreach
+        #sub-nav.centering.text-center
+          .wrapper
+            %ul
+              %li 
+                %a Home
+              %li.lightblue /
+              %li 
+                = link_to "Free Press Fund", syndicate_path(1)
+              %li.lightblue /
+              %li 
+                %a Law Fund
+              %li.lightblue /
+              %li
+                %a FAQ
 
-    %hr
-    .portfolio
-      %h3 Portfolio
-      .row
-        .col-xs-4
-          %h5 Environmental Data and Governance Initiative
-          back up science data under threat
-        .col-xs-4
-          %ul
-            %li
-              %h5 Environmental Data and Governance Initiative
-              back up science data under threat
-        .col-xs-4
-          %h5 Environmental Data and Governance Initiative
-          back up science data under threat
-          .small founded 2006
-    %hr
-    Get in touch
+= link_to "Sign out", destroy_user_session_path, :method => :delete 
+
+
+/ %body.home.page-template.page-template-home_page.page-template-home_page-php.page.page-id-6
+/   #wrapper.hfeed
+/     #header
+/       #branding
+/         #blog-title
+/           %span
+/             %a{:href => "http://www.socialcapital.com/", :rel => "home", :title => "Social Capital"} American Donor Syndicate
+/       #access
+/         .menu
+/           %ul#menu-main-nav.sf-menu
+/             %li Protecting U.S. institutions against executive branch overreach
+/             %br
+/             %br
+/           #anchor_links_wrapper.desktop.portfolio.fullwidth
+/             #anchor_links
+/               .anchor_link_item
+/                 %a.anchor_link{:href => "#consumer"} Home
+/               .anchor_link_item
+/                 %a.anchor_link{:href => "#enterprise"} Free Press
+/               .anchor_link_item
+/                 %a.anchor_link{:href => "#financial"} Law and Judiciary
+/               .anchor_link_item
+/                 %a.anchor_link{:href => "#education"} FAQ
+
+
+
+    
+
+/ .container
+/   .row
+/     %h2.col-xs-6
+/       American Donor Syndicate
+/     %h5.col-xs-8
+/       A donor syndicate to protect the institutions of U.S. democracy against executive branch overreach.
+/   %hr
+
+/   #wrapper
+/     .syndicates 
+/       %h3 Funds
+/       .row.syndicate
+/         .col-xs-8
+/           %h4 Free the press
+/           Do this..
+/           = link_to "fund", syndicate_path(1)
+/       %br
+/       .row.syndicate
+/         .col-xs-8x
+/           %h4 Protect the law
+/           Do this..
+
+/     %hr
+/     .portfolio
+/       %h3 Portfolio
+/       .row
+/         .col-xs-4
+/           %h5 Environmental Data and Governance Initiative
+/           back up science data under threat
+/         .col-xs-4
+/           %ul
+/             %li
+/               %h5 Environmental Data and Governance Initiative
+/               back up science data under threat
+/         .col-xs-4
+/           %h5 Environmental Data and Governance Initiative
+/           back up science data under threat
+/           .small founded 2006
+/     %hr
+/     Get in touch
+
+/ #wrapper.hfeed
+/   %a{:name => "top"}
+/   #header_wrapper
+/     #header
+/       #branding
+/         #blog-title
+/           %span
+/             American Donor Syndicate
+/         #blog-subtitle
+  
+/       #access
+/         .menu
+/           %ul#menu-main-nav.sf-menu
+/             %li Protecting U.S. institutions against executive branch overreach
+    
+/   #main_wrapper
+/     #main
+/       #anchor_links_wrapper.desktop.portfolio.fullwidth
+/         #anchor_links
+/           .anchor_link_item
+/             %a.anchor_link{:href => "#consumer"} Home
+/           .anchor_link_item
+/             %a.anchor_link{:href => "#enterprise"} Free Press
+/           .anchor_link_item
+/             %a.anchor_link{:href => "#financial"} Law and Judiciary
+/           .anchor_link_item
+/             %a.anchor_link{:href => "#education"} FAQ
+
+
+/ #container.fullwidth
+/   #content
+/     #post-12.post-12.page.type-page.status-publish.hentry
+/       %h1.entry-title Portfolio
+/       .entry-content
+/     #comments
+
+/   .grid_wrapper.portfolio
+/     .grid_section
+/       %a{:name => "consumer"}
+/       %h2 Free Press Fund
+/       %br
+/       %ul#fund-details.sf-menu
+/         %li.box.lowercase
+/           %b Investment mandate:
+/           This fund invests in high-risk / high-reward projects that embolden journalists to cover stories that matter, without fear of repercussions.
+        
+/         %br
+/         %br
+/         %br
+/         %li
+/           %br
+/           Initial fund size:
+/           $100,000.00
+/         %li
+/           Minimum donation size: 
+/           $5,000.00
+/         %br
+/         %li.text-center.lightblue.pull-right.large.negative-margin
+/           %a.lightblue View /
+      
+/     %br
+/     %br
+/     %br
+/     %br
+/     .grid_section
+/       %a{:name => "consumer"}
+/       %h2 Law and Judiciary Fund
+/       %br
+/       %ul#fund-details.sf-menu
+/         %li.box.lowercase
+/           %b Investment mandate:
+/           This fund invests in high-risk / high-reward projects that embolden journalists to cover stories that matter, without fear of repercussions.
+        
+/         %br
+/         %br
+/         %br
+/         %li
+/           %br
+/           Initial fund size:
+/           $100,000.00
+/         %li
+/           Minimum donation size: 
+/           $5,000.00
+/         %br
+/         %li.text-center.lightblue.pull-right.large.negative-margin
+/           %a.lightblue View /
+/     %br
+/     %br
+/     %br
+
+/ .grid_item_wrapper
+/   .grid_item
+/     .grid_photo
+/       %a{:href => "http://www.bustle.com/", :target => "_blank"}
+/         %img.company_logo.wp-post-image{:alt => "", :height => "160", :src => "http://www.socialcapital.com/wp-content/uploads/2015/09/portfolio-bustle.png", :width => "240"}/
+/     .grid_title
+/       %a{:href => "http://www.bustle.com/", :target => "_blank"} Bustle
+/   .grid_item
+/     .grid_photo
+/       %a{:href => "http://forge.gg", :target => "_blank"}
+/         %img.company_logo.wp-post-image{:alt => "", :height => "160", :src => "http://www.socialcapital.com/wp-content/uploads/2016/06/portfolio-forge.png", :width => "240"}/
+/     .grid_title
+/       %a{:href => "http://forge.gg", :target => "_blank"} Forge
+/   .grid_item
+/     .grid_photo
+/       %a{:href => "https://www.getable.com/", :target => "_blank"}
+/         %img.company_logo.wp-post-image{:alt => "", :height => "160", :src => "http://www.socialcapital.com/wp-content/uploads/2015/10/portfolio-getable1.png", :width => "240"}/
+/     .grid_title
+/       %a{:href => "https://www.getable.com/", :target => "_blank"} Getable
+/   .grid_item
+/     .grid_photo
+/       %a{:href => "https://rogertalk.com/", :target => "_blank"}
+/         %img.company_logo.wp-post-image{:alt => "", :height => "160", :src => "http://www.socialcapital.com/wp-content/uploads/2016/02/portfolio-roger.png", :width => "240"}/
+/     .grid_title
+/       %a{:href => "https://rogertalk.com/", :target => "_blank"} Roger
+/ %br
+/ %br
+/ %br
+/ %br
+/ %h2 Barbara's Fund
+/ %br
+/ %br
+/ .grid_item_wrapper
+/   .grid_item
+/     .grid_photo
+/       %a{:href => "http://www.bustle.com/", :target => "_blank"}
+/         %img.company_logo.wp-post-image{:alt => "", :height => "160", :src => "http://www.socialcapital.com/wp-content/uploads/2015/09/portfolio-bustle.png", :width => "240"}/
+/     .grid_title
+/       %a{:href => "http://www.bustle.com/", :target => "_blank"} Bustle
+/   .grid_item
+/     .grid_photo
+/       %a{:href => "http://forge.gg", :target => "_blank"}
+/         %img.company_logo.wp-post-image{:alt => "", :height => "160", :src => "http://www.socialcapital.com/wp-content/uploads/2016/06/portfolio-forge.png", :width => "240"}/
+/     .grid_title
+/       %a{:href => "http://forge.gg", :target => "_blank"} Forge
+/   .grid_item
+/     .grid_photo
+/       %a{:href => "https://www.getable.com/", :target => "_blank"}
+/         %img.company_logo.wp-post-image{:alt => "", :height => "160", :src => "http://www.socialcapital.com/wp-content/uploads/2015/10/portfolio-getable1.png", :width => "240"}/
+/     .grid_title
+/       %a{:href => "https://www.getable.com/", :target => "_blank"} Getable
+/   .grid_item
+/     .grid_photo
+/       %a{:href => "https://rogertalk.com/", :target => "_blank"}
+/         %img.company_logo.wp-post-image{:alt => "", :height => "160", :src => "http://www.socialcapital.com/wp-content/uploads/2016/02/portfolio-roger.png", :width => "240"}/
+/     .grid_title
+/       %a{:href => "https://rogertalk.com/", :target => "_blank"} Roger
+
+/   

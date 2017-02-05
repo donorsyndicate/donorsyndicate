@@ -1,0 +1,38 @@
+.container-fluid
+  .row-fluid-top
+    .centering.text-center
+      #title
+        %h1 American Donor Syndicate
+      %br
+    .row#nav.centering.text-center
+      .col-xs-12
+        #subtitle
+          Protecting U.S. institutions against executive branch overreach
+        #sub-nav.centering.text-center
+          .wrapper
+            %ul
+              %li 
+                %a Home
+              %li.lightblue /
+              %li 
+                %a Free Press Fund
+              %li.lightblue /
+              %li 
+                %a Law Fund
+              %li.lightblue /
+              %li
+                %a FAQ
+
+    .login.centering.text-center.wrapper
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .form-group
+          = f.label :email
+          %br/
+          = f.email_field :email, autofocus: true, class: 'form-control'
+        .form-group
+          = f.label :password
+          %br/
+          = f.password_field :password, autocomplete: "off", class: 'form-control'
+
+        .actions
+          .btn= f.submit "Enter"
