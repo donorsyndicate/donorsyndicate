@@ -2952,30 +2952,89 @@ html, body{height:100%; margin:0;padding:0}
 .container-fluid{
   height:100%;
   display:table;
-  width: 40%;
+  width: 100%;
   padding: 0;
   // font-family:'FuturaPT-Medium',sans-serif;font-weight:normal;color:#2bbeeb;cursor:default;
   font-size: 0.80em;
   text-transform: uppercase;
 }
-.container-fluid-top {
-  height:30%;
+.container-fluid-full {
+  height:100%;
   display:table;
-  width: 40%;
+  width: 100%;
   padding: 0;
   // font-family:'FuturaPT-Medium',sans-serif;font-weight:normal;color:#2bbeeb;cursor:default;
   font-size: 0.80em;
   text-transform: uppercase;
+}
+#wrapper {
+	margin-left: 140px;
+	margin-right: 140px;
+	// font-family:'FuturaPT-Medium',sans-serif;font-weight:normal;color:#2bbeeb;cursor:default;
+	font-size: 0.80em;
+  	text-transform: uppercase;
+  	margin-top: 70px;
 }
  
-.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
-.row-fluid-top {height: 100%; display:table-cell; padding-top: 70px;}
+.row-fluid {height: 100%; width: 40%; display:table-cell; vertical-align: middle;}
+.row-fluid-top {height: 100%; width: 40%; display:table-cell; padding-top: 70px;}
  
 %ul {
 	width: 70%;
 	margin: auto;
 }
 
+.narrow {
+	width: 40%;
+}
+.mandate {
+	margin-top: 40px;
+	text-transform: none !important;
+	font-size: 1.6em !important;
+}
+
+#header-wrapper {
+	margin-left: 270px;
+	margin-right: 270px;
+}
+#section {
+	margin-bottom: 100px;
+}
+
+.fund-details {
+	margin-top: 40px !important;
+	color: #b8b8b8;
+	ul {
+		border-top: 1px solid #d3d3d3;
+		padding-top: 40px !important;
+	}
+}
+
+.float {
+	li {
+		float: left
+	}
+}
+.invest {
+	margin-top: 50px !important;
+	margin-bottom: 150px !important;
+	font-size: 1.5em;
+}
+
+.btn-red {
+	background: #ff423e !important;
+	padding: 20px;
+}
+
+.blue-box {
+	background: #2abdea;
+	padding: 20px;
+	color: white;
+}
+
+.large {
+	font-size: 1.3em;
+}
 .centering {
   float:none;
   margin:0 auto;
@@ -2985,6 +3044,12 @@ html, body{height:100%; margin:0;padding:0}
 	margin:0 auto;
 	text-align: center;
   }
+}
+
+#fund-title {
+	font-size: 2.5em;
+	color: #858585;
+	padding-bottom: 20px;
 }
 
 .login {
